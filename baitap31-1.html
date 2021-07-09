@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài tập 30-1: grid 1</title>
+	<style>
+		*{padding: 0;margin: 0;box-sizing: border-box;}
+		header{width: 100%;background: red;min-height: 100px;}
+		#wrap{width: 800px;margin: auto;background: purple;display: grid;grid-template-columns: 200px 200px 200px 200px;}
+		#cell1{grid-column: span 3;background: blue;min-height: 50px;}
+		#cell2{min-height: 80px;}
+			#green{background: green;height: 80px;}
+			#yellow{background: yellow;height: 80px;}
+		#cell3{grid-column: span 2;min-height: 100px;display: grid;grid-columns: 200px 200px;}
+			#green2{grid-column: span 2;background: green;height: 75px;}
+			#pink1{background: pink;height: 85px;}
+			#orange1{background: orange;height: 85px;}
+		#cell4{grid-column: span 2;backrground: blue;display: grid;grid-template-columns: 200px 200px;}
+			#red{grid-row: span 2;background: red;height: 90px;}
+			#orange2{background: orange;height: 45px;}
+			#green3{background: green;height: 45px;}
+			#pink2{grid-column: span 2;background: pink;height: 70px;}
+		#cell5{grid-column: span 4;background: red;height: 20px;}
+	</style>
+</head>
+<body>
+	<header></header>
+	<div id="wrap">
+		<div class="cell" id="cell1">Slide</div>
+		<div class="cell" id="cell2">
+			<div id="green">Green 1</div>
+			<div id="yellow">Yellow 1</div>
+		</div>
+		<div class="cell" id="cell3">
+			<div id="green2">Green 2</div>
+			<div id="pink1">Pink 1</div>
+			<div id="orange1">Orange 1</div>
+		</div>
+		<div class="cell" id="cell4">
+			<div id="red">Red</div>
+			<div id="orange2">Orange 2</div>
+			<div id="green3">Green 3</div>
+			<div id="pink2">Pink 2</div>
+		</div>
+		<div class="cell" id="cell5">Footer</div>
+	</div>
+</body>
+</html>
